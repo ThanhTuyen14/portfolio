@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Morgan | IT Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-container">
+        <div class="logo">Alex Morgan</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Alex Morgan</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">
+          Full Stack Developer specializing in modern web applications, cloud
+          architecture, and DevOps practices
+        </p>
+        <a
+          href="#contact"
+          class="btn animate__animated animate__bounceIn animate__delay-2s"
+          >Get In Touch</a
+        >
+      </div>
+      <div class="floating-items">
+        <div
+          class="floating-item"
+          style="left: 10%; top: 20%; animation-delay: 0s"
+        >
+          ✨
+        </div>
+        <div
+          class="floating-item"
+          style="left: 20%; top: 60%; animation-delay: 1s"
+        >
+          🌸
+        </div>
+        <div
+          class="floating-item"
+          style="left: 80%; top: 15%; animation-delay: 0.5s"
+        >
+          💕
+        </div>
+        <div
+          class="floating-item"
+          style="left: 70%; top: 70%; animation-delay: 1.5s"
+        >
+          ✨
+        </div>
+        <div
+          class="floating-item"
+          style="left: 90%; top: 40%; animation-delay: 2s"
+        >
+          🌸
+        </div>
+      </div>
+    </header>
+
+    <style>
+      .floating-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .floating-item {
+        position: absolute;
+        font-size: 24px;
+        opacity: 0.7;
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(10deg);
+        }
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+      }
+
+      .hero .container {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img
+              src="/api/placeholder/400/400"
+              alt="Alex Morgan profile picture"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Hello! I'm Alex, a passionate IT Developer with over 5 years of
+              experience building robust and scalable applications. I specialize
+              in full-stack development with a focus on cloud-native solutions
+              and DevOps practices.
+            </p>
+            <p>
+              My journey in tech began with a Computer Science degree, followed
+              by roles at startups and enterprise companies where I've honed my
+              skills across the entire development lifecycle. I'm particularly
+              interested in building high-performance applications and
+              implementing efficient CI/CD pipelines.
+            </p>
+            <p>
+              When I'm not coding, you'll find me contributing to open-source
+              projects, mentoring junior developers, or exploring the latest
+              tech trends. I believe in writing clean, maintainable code and
+              creating solutions that provide real business value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <ul>
+              <li>JavaScript (ES6+), TypeScript</li>
+              <li>React, Vue.js, Angular</li>
+              <li>HTML5, CSS3, SASS</li>
+              <li>Redux, Context API</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Backend Development</h3>
+            <ul>
+              <li>Node.js, Express</li>
+              <li>Python (Django, Flask)</li>
+              <li>Java (Spring Boot)</li>
+              <li>RESTful APIs</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Database</h3>
+            <ul>
+              <li>SQL (PostgreSQL, MySQL)</li>
+              <li>NoSQL (MongoDB, DynamoDB)</li>
+              <li>Redis</li>
+              <li>Database optimization</li>
+              <li>Data modeling</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>DevOps & Cloud</h3>
+            <ul>
+              <li>AWS, Azure, GCP</li>
+              <li>Docker, Kubernetes</li>
+              <li>CI/CD (Jenkins, GitHub Actions)</li>
+              <li>Infrastructure as Code (Terraform)</li>
+              <li>Monitoring (Prometheus, Grafana)</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Methods</h3>
+            <ul>
+              <li>Git, GitHub, GitLab</li>
+              <li>Agile/Scrum</li>
+              <li>Test-Driven Development</li>
+              <li>Microservices architecture</li>
+              <li>System design</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Security & Best Practices</h3>
+            <ul>
+              <li>OWASP security principles</li>
+              <li>Authentication & Authorization</li>
+              <li>Performance optimization</li>
+              <li>Clean code practices</li>
+              <li>Code reviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/api/placeholder/350/200" alt="E-commerce Platform" />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Platform</h3>
+              <p>
+                A full-stack e-commerce solution with user authentication,
+                product management, payment integration, and analytics
+                dashboard.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> React, Node.js, MongoDB, AWS,
+                Stripe API
+              </p>
+              <div class="project-links">
+                <a href="#">View Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/api/placeholder/350/200" alt="Cloud Management Tool" />
+            </div>
+            <div class="project-info">
+              <h3>Cloud Resource Manager</h3>
+              <p>
+                A dashboard for managing cloud resources across multiple
+                providers with cost optimization recommendations.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> Vue.js, Python, PostgreSQL, Docker,
+                AWS SDK
+              </p>
+              <div class="project-links">
+                <a href="#">View Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="/api/placeholder/350/200"
+                alt="Real-time Chat Application"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Real-time Collaboration Tool</h3>
+              <p>
+                A team collaboration platform with real-time messaging, file
+                sharing, and task management capabilities.
+              </p>
+              <p>
+                <strong>Tech Stack:</strong> React, Socket.io, Express, MongoDB,
+                Redis
+              </p>
+              <div class="project-links">
+                <a href="#">View Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <div class="experience-item">
+            <h3>Senior Full Stack Developer</h3>
+            <h4>Tech Innovations Inc. | 2022 - Present</h4>
+            <ul>
+              <li>
+                Lead a team of 5 developers building a cloud-native SaaS
+                platform used by 50,000+ users
+              </li>
+              <li>
+                Redesigned the microservices architecture resulting in 40%
+                improved performance
+              </li>
+              <li>
+                Implemented CI/CD pipelines reducing deployment time from hours
+                to minutes
+              </li>
+              <li>
+                Collaborated with product teams to translate business
+                requirements into technical specifications
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>DevOps Engineer</h3>
+            <h4>Cloud Systems Solutions | 2020 - 2022</h4>
+            <ul>
+              <li>
+                Managed infrastructure for high-traffic applications serving
+                millions of requests daily
+              </li>
+              <li>
+                Automated deployment processes using Terraform and Ansible
+              </li>
+              <li>
+                Implemented monitoring and alerting solutions that improved
+                incident response time by 65%
+              </li>
+              <li>Optimized cloud costs resulting in 30% monthly savings</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Full Stack Developer</h3>
+            <h4>WebSoft Technologies | 2018 - 2020</h4>
+            <ul>
+              <li>
+                Developed and maintained multiple web applications using
+                JavaScript and Python
+              </li>
+              <li>
+                Collaborated in an Agile team environment to deliver features on
+                time
+              </li>
+              <li>
+                Optimized database queries resulting in 50% faster page load
+                times
+              </li>
+              <li>Mentored junior developers and conducted code reviews</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul class="social-links">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Dev.to</a></li>
+        </ul>
+        <p>&copy; 2025 Alex Morgan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Form submission handling
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for your message! I will get back to you soon.");
+        form.reset();
+      });
+
+      // Reveal animations on scroll
+      const observerOptions = {
+        threshold: 0.25,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Add reveal classes and observe elements
+      window.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section, index) => {
+          section.classList.add("reveal");
+          section.style.transitionDelay = `${index * 0.1}s`;
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+</html>
